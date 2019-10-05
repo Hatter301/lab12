@@ -2,15 +2,15 @@
 using namespace std;
 double PowerA3(double a, double b) {
 	b = a * a * a;
-	cout << b << " ";
-	return 0;
+	return b;
 }
-int i=0;
+int i = 0;
 double a, b;
 int main() {
 	while (i != 5) {
 		cin >> a;
-		PowerA3(a,b);
-			i++;
+		b=PowerA3(a,b);
+		cout << b << " ";
+		i++;
 	}
 }
