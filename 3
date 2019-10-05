@@ -1,0 +1,21 @@
+#include <iostream>
+using namespace std;
+double s;
+double RingS(double r1, double r2) {
+	s = 3.14 * r1*r1 - 3.14 * r2*r2;
+	return s;
+}
+int i = 0;
+double r1, r2;
+int main() {
+	while (i != 3) {
+		cin >> r1>>r2;
+		if (r1 <= r2)
+			cout << "Данные введены некорректно ";
+		else {
+			s = RingS(r1, r2);
+			cout << s << " ";
+			i++;
+		}
+	}
+}
